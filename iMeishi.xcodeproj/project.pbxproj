@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		7D2EE5122C49561F0085978B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EE5112C49561F0085978B /* AppDelegate.swift */; };
 		7D2EE5142C49561F0085978B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EE5132C49561F0085978B /* SceneDelegate.swift */; };
-		7D2EE5162C49561F0085978B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EE5152C49561F0085978B /* ViewController.swift */; };
 		7D2EE5192C49561F0085978B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EE5182C49561F0085978B /* Base */; };
 		7D2EE51B2C4956200085978B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EE51A2C4956200085978B /* Assets.xcassets */; };
 		7D2EE51E2C4956200085978B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EE51D2C4956200085978B /* Base */; };
+		7DDA94632C4E904900F9B2AF /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA94622C4E904900F9B2AF /* ContactTableViewCell.swift */; };
+		7DFFAD412C4E280D00C27167 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFAD402C4E280D00C27167 /* HomeViewController.swift */; };
+		7DFFAD432C4E284700C27167 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFAD422C4E284700C27167 /* DetailTableViewController.swift */; };
+		7DFFAD472C4E64AD00C27167 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFAD462C4E64AD00C27167 /* Contact.swift */; };
+		7DFFAD4A2C4E7AA700C27167 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFAD492C4E7AA700C27167 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D2EE50E2C49561F0085978B /* iMeishi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeishi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2EE5112C49561F0085978B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D2EE5132C49561F0085978B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D2EE5152C49561F0085978B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D2EE5182C49561F0085978B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D2EE51A2C4956200085978B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2EE51D2C4956200085978B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2EE51F2C4956200085978B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DDA94622C4E904900F9B2AF /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		7DFFAD402C4E280D00C27167 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7DFFAD422C4E284700C27167 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		7DFFAD462C4E64AD00C27167 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		7DFFAD492C4E7AA700C27167 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		7D2EE5102C49561F0085978B /* iMeishi */ = {
 			isa = PBXGroup;
 			children = (
+				7DFFAD482C4E7A8A00C27167 /* Extensions */,
+				7DFFAD452C4E648F00C27167 /* Models */,
+				7DFFAD442C4E285400C27167 /* Controllers */,
 				7D2EE5112C49561F0085978B /* AppDelegate.swift */,
 				7D2EE5132C49561F0085978B /* SceneDelegate.swift */,
-				7D2EE5152C49561F0085978B /* ViewController.swift */,
 				7D2EE5172C49561F0085978B /* Main.storyboard */,
 				7D2EE51A2C4956200085978B /* Assets.xcassets */,
 				7D2EE51C2C4956200085978B /* LaunchScreen.storyboard */,
 				7D2EE51F2C4956200085978B /* Info.plist */,
 			);
 			path = iMeishi;
+			sourceTree = "<group>";
+		};
+		7DFFAD442C4E285400C27167 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DFFAD402C4E280D00C27167 /* HomeViewController.swift */,
+				7DFFAD422C4E284700C27167 /* DetailTableViewController.swift */,
+				7DDA94622C4E904900F9B2AF /* ContactTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7DFFAD452C4E648F00C27167 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7DFFAD462C4E64AD00C27167 /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7DFFAD482C4E7A8A00C27167 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DFFAD492C4E7AA700C27167 /* UIImageView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D2EE5162C49561F0085978B /* ViewController.swift in Sources */,
 				7D2EE5122C49561F0085978B /* AppDelegate.swift in Sources */,
 				7D2EE5142C49561F0085978B /* SceneDelegate.swift in Sources */,
+				7DFFAD472C4E64AD00C27167 /* Contact.swift in Sources */,
+				7DFFAD412C4E280D00C27167 /* HomeViewController.swift in Sources */,
+				7DFFAD4A2C4E7AA700C27167 /* UIImageView.swift in Sources */,
+				7DDA94632C4E904900F9B2AF /* ContactTableViewCell.swift in Sources */,
+				7DFFAD432C4E284700C27167 /* DetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
